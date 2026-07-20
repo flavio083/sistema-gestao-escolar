@@ -1,44 +1,42 @@
 # 🎓 Sistema de Gestão Escolar
 
-> Projeto desenvolvido para a disciplina de **Programação Orientada a Objetos (POO)**, utilizando **Java** e arquitetura **MVC**.
+<p align="center">
 
-O sistema simula a gestão de uma instituição de ensino, permitindo o cadastro de alunos, professores, disciplinas e turmas, além do gerenciamento de notas, frequência, bolsas e emissão de boletins.
+Projeto desenvolvido para a disciplina de **Programação Orientada a Objetos (POO)** utilizando **Java**, aplicando os principais conceitos da orientação a objetos e seguindo a arquitetura **MVC (Model-View-Controller)**.
 
----
-
-## 📚 Funcionalidades
-
-✔️ Cadastro de alunos
-
-✔️ Cadastro de professores
-
-✔️ Cadastro de disciplinas
-
-✔️ Criação de turmas
-
-✔️ Matrícula de alunos
-
-✔️ Lançamento de notas
-
-✔️ Registro de frequência
-
-✔️ Emissão de boletim
-
-✔️ Relatório da turma
-
-✔️ Aplicação de bolsa
-
-✔️ Transferência de alunos entre turmas
-
-✔️ Tratamento de erros com exceções customizadas
-
-✔️ Validação de entradas utilizando JOptionPane
+</p>
 
 ---
 
-# 🏗️ Arquitetura
+## 📖 Sobre o Projeto
 
-O projeto foi organizado seguindo o padrão **MVC (Model-View-Controller)**.
+O Sistema de Gestão Escolar simula o funcionamento básico de uma instituição de ensino, permitindo o gerenciamento de alunos, professores, disciplinas e turmas.
+
+Além das operações de cadastro, o sistema também realiza o controle de notas, frequência, bolsas de estudo, emissão de boletins e geração de relatórios, sempre com validações e tratamento de exceções para garantir a integridade dos dados.
+
+---
+
+## ✨ Funcionalidades
+
+- 👨‍🎓 Cadastro de alunos
+- 👨‍🏫 Cadastro de professores
+- 📚 Cadastro de disciplinas
+- 🏫 Criação de turmas
+- 📝 Matrícula de alunos
+- 📊 Lançamento de notas
+- 📅 Registro de frequência
+- 📄 Emissão de boletim
+- 📈 Relatório da turma
+- 🎓 Aplicação de bolsas
+- 🔄 Transferência de alunos
+- ⚠️ Tratamento de exceções
+- ✅ Validação de entradas com JOptionPane
+
+---
+
+# 🏗️ Arquitetura do Projeto
+
+O sistema foi desenvolvido seguindo o padrão **MVC (Model-View-Controller)**.
 
 ```
 src
@@ -74,46 +72,46 @@ src
 
 ---
 
-# 💻 Tecnologias utilizadas
+# 💻 Tecnologias Utilizadas
 
 - Java
 - IntelliJ IDEA
 - Git
 - GitHub
-- JOptionPane
+- Swing (JOptionPane)
 
 ---
 
-# 🧠 Conceitos de Programação Orientada a Objetos
+# 🧠 Conceitos de POO Aplicados
 
-Durante o desenvolvimento foram aplicados diversos conceitos de POO, como:
+Durante o desenvolvimento foram utilizados diversos conceitos da Programação Orientada a Objetos.
 
-- Encapsulamento
-- Herança
-- Polimorfismo
-- Sobrecarga de métodos
-- Sobrescrita de métodos
-- Classes abstratas
-- Constantes (`final`)
-- Atributos estáticos (`static`)
-- Enums
-- Exceções customizadas
-- Organização em pacotes
-- Arquitetura MVC
+| Conceito | Aplicação |
+|----------|-----------|
+| Encapsulamento | Uso de atributos privados e métodos getters/setters |
+| Herança | Classes `Aluno` e `Professor` herdando de `Pessoa` |
+| Polimorfismo | Sobrescrita do método `calcularMediaFinal()` |
+| Sobrecarga | Método `adicionarNota()` |
+| Classe Abstrata | Classe `Pessoa` |
+| Constantes | Uso de `final` |
+| Atributos Estáticos | Uso de `static` |
+| Enums | `Turno` e `StatusAluno` |
+| Exceções Customizadas | Validação das regras de negócio |
+| MVC | Separação entre Model, View e Controller |
 
 ---
 
-# 📌 Funcionalidades implementadas
+# ✅ Funcionalidades Implementadas
 
 | Funcionalidade | Status |
-|---------------|:------:|
+|----------------|:-----:|
 | Cadastro de Alunos | ✅ |
 | Cadastro de Professores | ✅ |
 | Cadastro de Disciplinas | ✅ |
 | Cadastro de Turmas | ✅ |
-| Matrícula | ✅ |
-| Registro de Frequência | ✅ |
+| Matrícula de Alunos | ✅ |
 | Lançamento de Notas | ✅ |
+| Registro de Frequência | ✅ |
 | Emissão de Boletim | ✅ |
 | Relatório da Turma | ✅ |
 | Aplicação de Bolsa | ✅ |
@@ -123,52 +121,71 @@ Durante o desenvolvimento foram aplicados diversos conceitos de POO, como:
 
 # ⚠️ Tratamento de Erros
 
-O sistema realiza validações para evitar falhas durante a execução.
+O sistema possui validações para evitar falhas durante a execução.
 
 Entre elas:
 
-- Notas entre 0 e 10
-- Turmas com limite máximo de alunos
-- Transferência apenas entre turmas do mesmo turno
-- Validação de entradas numéricas
-- Mensagens de erro através do JOptionPane
+- ✅ Notas apenas entre **0 e 10**
+- ✅ Limite máximo de alunos por turma
+- ✅ Transferência apenas entre turmas do mesmo turno
+- ✅ Validação de entradas numéricas
+- ✅ Mensagens de erro utilizando **JOptionPane**
+- ✅ Exceções customizadas para regras de negócio
 
 ---
 
-# ▶️ Como executar
+# 🚀 Como Executar
 
-1. Clone este repositório
+### Clone o repositório
 
 ```bash
 git clone https://github.com/flavio083/sistema-gestao-escolar.git
+```
 
-2. Abra o projeto em uma IDE Java (IntelliJ IDEA ou Eclipse).
+### Entre na pasta
 
-3. Execute a classe:
+```bash
+cd sistema-gestao-escolar
+```
+
+### Abra o projeto
+
+Abra o projeto utilizando uma IDE Java, como:
+
+- IntelliJ IDEA
+- Eclipse
+- NetBeans
+
+### Execute
 
 ```
 Main.java
 ```
 
-4. Utilize o menu para acessar todas as funcionalidades.
-
 ---
 
 # 👨‍💻 Autor
 
-**Flaviano Aguiar Silva Filho**
+### Flaviano Aguiar Silva Filho
 
-- 💼 Estudante de Sistemas de Informação — UNIFACISA
-- 🌎 Campina Grande - PB
+🎓 Estudante de Sistemas de Informação — UNIFACISA
 
-GitHub:
-https://github.com/flavio083
+📍 Campina Grande - PB
 
-LinkedIn:
-https://www.linkedin.com/in/flaviano-aguiardev/
+### Contato
+
+GitHub
+
+> https://github.com/flavio083
+
+LinkedIn
+
+> https://www.linkedin.com/in/flaviano-aguiardev/
 
 ---
 
 # 📄 Licença
 
-Este projeto foi desenvolvido para fins acadêmicos, podendo ser utilizado como material de estudo e aprendizado.
+Este projeto foi desenvolvido exclusivamente para fins acadêmicos e de aprendizado da disciplina de Programação Orientada a Objetos.
+
+---
