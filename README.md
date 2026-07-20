@@ -140,8 +140,7 @@ Entre elas:
 1. Clone este repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
-```
+git clone https://github.com/flavio083/sistema-gestao-escolar.git
 
 2. Abra o projeto em uma IDE Java (IntelliJ IDEA ou Eclipse).
 
@@ -152,20 +151,6 @@ Main.java
 ```
 
 4. Utilize o menu para acessar todas as funcionalidades.
-
----
-
-# 📷 Demonstração
-
-Você pode adicionar aqui capturas de tela do sistema.
-
-Exemplo:
-
-```
-docs/menu.png
-docs/boletim.png
-docs/relatorio.png
-```
 
 ---
 
